@@ -142,7 +142,7 @@ You can learn more about Deployments in Kubernetes on the project's [documentati
 
 ## Step 8 - Expose the Application to the World
 
-To expose your application to the world and allow external users to access it from outside the cluster, you can use a Kubernetes Service of [type LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) or [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport). For instance, to define a service of type LoadBalancer for the exampleapp, create a manifest file named service.yaml with the following content:
+To expose your application to the world and allow external users to access it from outside the cluster, you can use a Kubernetes Service of [type LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) or [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport). For instance, to define a service of type LoadBalancer for `exampleapp`, create a manifest file named `service.yaml` with the following content:
 
 ```
 apiVersion: v1
@@ -164,8 +164,8 @@ Read more about how Services work in Kubernetes by clicking [here](https://kuber
 
 To verify if the deployment is working as expected on Kubernetes, you can enter the following commands
 
-`kubectl get pods`: checks the status of your [pods](https://kubernetes.io/docs/concepts/workloads/pods/).
-`kubectl logs`: displays logs for the `exampleapp` application.
+- `kubectl get pods`: checks the status of your [pods](https://kubernetes.io/docs/concepts/workloads/pods/).
+- `kubectl logs`: displays logs for the `exampleapp` application.
 
 ## Conclusion
 
