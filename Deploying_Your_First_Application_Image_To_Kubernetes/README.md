@@ -104,7 +104,7 @@ docker tag exampleapp <your-dockerhub-username>/exampleapp
 docker push <your-dockerhub-username>/exampleapp
 ```
 
-Replace <your-dockerhub-username> with your actual Docker Hub username.
+Replace `<your-dockerhub-username>` with your actual Docker Hub username.
 
 ## Step 7 - Deploy to a Kubernetes cluster
 
