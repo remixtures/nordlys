@@ -170,7 +170,3 @@ To verify if the deployment is working as expected on Kubernetes, you can enter 
 ## Conclusion
 
 Congratulations! By now, you should have successfully prepared an application image and deployed it to a Kubernetes cluster. Remember to replace the sample application with your actual production-level application code when you are ready to deploy your own services.
-
-## Conclusion
-
-Congratulations! By now, you should have successfully prepared an application image and deployed it to a Kubernetes cluster. Remember to replace the sample application with your actual production-level application code when you are ready to deploy your own services.
