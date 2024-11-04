@@ -1,4 +1,4 @@
-# Deploying Your First Application Image To Kubernetes
+# Deploy Your First Application Image To Kubernetes
 
 This hands-on tutorial provides a step-by-step guide to preparing an application image, setting up the necessary infrastructure, and deploying the image to a Kubernetes cluster. It is written for professional software developers who are new to Kubernetes and containerization.
 
