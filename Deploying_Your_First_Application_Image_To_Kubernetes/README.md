@@ -4,7 +4,7 @@ This hands-on tutorial provides a step-by-step guide to preparing an application
 
 ## Prerequisites
 
-- **Docker**: Ensure you have Docker installed on your machine. If not, please click on this [link](https://www.docker.com/get-started/) to download it and follow the instructions for your operating system and hardware to install it.
+- **Docker**: Ensure you have Docker installed on your machine. If not, [download it and follow the instructions](https://www.docker.com/get-started/) for your operating system and hardware to install it.
 - **Access to a Kubernetes cluster**: You'll need access to a running Kubernetes cluster. While it's possible to use a local cluster like Minikube or Docker Desktop, since we are currently migrating our microservices from an on-premises data center to cloud infrastructure, in a real scenario, you will most likely use a cloud-based cluster like Google Kubernetes Engine, Amazon EKS, or Azure Kubernetes Service.
 - **kubectl**: This is a Kubernetes command-line tool used for managing clusters. You will need it to deploy your application image to a cluster. [Download and install it](https://kubernetes.io/docs/tasks/tools) based on your operating system.
 
@@ -138,8 +138,6 @@ Apply this deployment to your Kubernetes cluster:
 kubectl apply -f deployment.yaml
 ```
 
-You can learn more about Deployments in Kubernetes on the project's [documentation site](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
-
 ## Step 8 - Expose the Application to the World
 
 To expose your application to the world and allow external users to access it from outside the cluster, you can use a Kubernetes Service of [type LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) or [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport). For instance, to define a service of type LoadBalancer for `exampleapp`, create a manifest file named `service.yaml` with the following content:
@@ -158,15 +156,20 @@ spec:
     app: exampleapp
 ```
 
-Read more about how Services work in Kubernetes by clicking [here](https://kubernetes.io/docs/concepts/services-networking/service/#services-in-kubernetes).
-
 ## Step 9 - Test the Deployment
 
 To verify if the deployment is working as expected on Kubernetes, you can enter the following commands
 
-- `kubectl get pods`: checks the status of your [pods](https://kubernetes.io/docs/concepts/workloads/pods/).
+- `kubectl get pods`: checks the status of your pods.
 - `kubectl logs`: displays logs for the `exampleapp` application.
 
 ## Conclusion
 
 Congratulations! By now, you should have successfully prepared an application image and deployed it to a Kubernetes cluster. Remember to replace the sample application with your actual production-level application code when you are ready to deploy your own services.
+
+## Additional Resources
+
+- Learn the basic of Kubernetes with this [Getting Started](https://kubernetes.io/docs/setup/) tutorial.
+- Understand what are [Kubernetes deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
+- Get to know [how Services work in Kubernetes](https://kubernetes.io/docs/concepts/services-networking/service/#services-in-kubernetes).
+- Read about the [role of Pods in Kubernetes](https://kubernetes.io/docs/concepts/workloads/pods/).
